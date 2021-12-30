@@ -2,21 +2,10 @@ import Image from "next/image";
 import styles from "./SinglePhoto.module.css";
 import { HiOutlineUser, HiOutlineHeart, HiHeart } from "react-icons/hi";
 import { MdOutlineDescription } from "react-icons/md";
-import { useSpring, animated } from "react-spring";
 
-export default function SinglePhoto({ photo, addFavourite, isMobile }) {
-	const props = useSpring({
-		to: async (next, cancel) => {
-			if (isMobile) {
-				return cancel();
-			}
-			await next({ opacity: 1, x: 0 });
-		},
-		from: { opacity: 0, x: -30 },
-	});
-
+export default function SinglePhoto({ photo, addFavourite }) {
 	return (
-		<animated.article style={props} className={styles["photo-wrapper"]}>
+		<article className={styles["photo-wrapper"]}>
 			<div className={styles["image-wrapper"]}>
 				<Image
 					layout="responsive"
@@ -70,6 +59,6 @@ export default function SinglePhoto({ photo, addFavourite, isMobile }) {
 					View Profile
 				</a>
 			</div>
-		</animated.article>
+		</article>
 	);
 }

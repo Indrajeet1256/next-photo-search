@@ -5,7 +5,7 @@ import { photoContext } from "../../context/photoContext";
 import ACTIONS from "../../reducers/actions";
 
 export default function Photos() {
-	const { page, photos, dispatch, isMobile } = useContext(photoContext);
+	const { page, photos, dispatch } = useContext(photoContext);
 
 	const addFavourite = useCallback(
 		(photoId) => {
@@ -18,12 +18,7 @@ export default function Photos() {
 	return (
 		<section className={styles["photos-grid"]}>
 			{photos?.map((photo) => (
-				<SinglePhoto
-					key={photo.id}
-					photo={photo}
-					addFavourite={addFavourite}
-					isMobile={isMobile}
-				/>
+				<SinglePhoto key={photo.id} photo={photo} addFavourite={addFavourite} />
 			))}
 		</section>
 	);
