@@ -1,0 +1,30 @@
+.sidebar-wrapper {
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	background-color: hsl(341, 69%, 50%);
+	width: 5%;
+	height: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	z-index: 99;
+	overflow: hidden;
+	border-top: 2px solid rgba(255, 255, 255, 0.1);
+}
+.sidebar-text-wrapper {
+	transform: rotate(-90deg);
+}
+.sidebar-text-wrapper p {
+	color: var(--text-color-light);
+	font-weight: 500;
+	white-space: nowrap;
+}
+@media (max-width: 768px) {
+	.sidebar-wrapper {
+		width: 15%;
+	}
+	.sidebar-text-wrapper {
+		font-size: 0.9rem;
+	}
+}

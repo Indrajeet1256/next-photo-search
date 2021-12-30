@@ -1,9 +1,7 @@
 import { useEffect, useState } from "react";
 import Head from "next/head";
 import { getPhotos } from "../api";
-import Photos from "../components/Photos/Photos";
-import Header from "../components/Header/Header";
-import Pagination from "../components/Pagination/Pagination";
+import { Photos, Pagination, Header, Sidebar } from "../components";
 import PhotosProvider from "../context/photoContext";
 
 export default function Home({ page, photos, query }) {
@@ -40,6 +38,7 @@ export default function Home({ page, photos, query }) {
 				<link rel="icon" href="/favicon.ico" />
 			</Head>
 			<Header />
+			<Sidebar />
 			<Pagination />
 			<Photos />
 		</PhotosProvider>
