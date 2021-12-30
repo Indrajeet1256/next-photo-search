@@ -1,16 +1,41 @@
+:root {
+	--header-bg: #cc2b5e;
+	--text-color-white: #ffffff;
+	--text-color-light: #eceff1;
+	--text-color-black: #29323c;
+	--bg-primary: #e040fb;
+	--bg-light: rgba(0, 0, 0, 0.03);
+}
+
 html,
 body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+	font-size: 100%;
+	font-family: Quicksand, sans-serif;
+}
+
+*,
+*::before,
+*::after {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: inherit;
 }
 
 a {
-  color: inherit;
-  text-decoration: none;
+	text-decoration: none;
+	cursor: pointer;
+	color: inherit;
 }
 
-* {
-  box-sizing: border-box;
+ul,
+ol {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+button {
+	cursor: pointer;
+	border: none;
+	outline: none;
 }
