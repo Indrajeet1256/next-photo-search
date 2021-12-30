@@ -64,7 +64,7 @@ export default function SinglePhoto({ photo, addFavourite, isMobile }) {
 				</ul>
 				<a
 					href={photo.photographer_url}
-					rel="noopener norefferer"
+					rel="noopener noreferrer"
 					target="_blank"
 					className={styles["profile-button"]}>
 					View Profile

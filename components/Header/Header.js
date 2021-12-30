@@ -17,7 +17,7 @@ export default function Header() {
 					style={{
 						flex: isMobile ? "0 0 10%" : "0 0 40%",
 					}}>
-					<Link href="/">
+					<Link href="/" passHref>
 						<div className={styles["logo"]}>
 							{isMobile ? (
 								<HiCamera size={23} />
