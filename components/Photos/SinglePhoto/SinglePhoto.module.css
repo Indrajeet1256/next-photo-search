@@ -43,7 +43,7 @@
 	align-items: center;
 	justify-content: center;
 	color: var(--text-color-white);
-	font-weight: 600;
+	font-weight: 400;
 	border-radius: 3px;
 	transition: all 0.3s;
 }
@@ -73,7 +73,7 @@
 	align-items: center;
 	justify-content: flex-start;
 	gap: 0.5rem;
-	font-weight: 600;
+	font-weight: 500;
 	color: var(--text-color-black);
 }
 .photo-icon {
